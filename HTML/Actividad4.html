@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<form action="/procesar-formulario" method="POST">
+    <fieldset>
+        <legend>Informacion personal</legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="" id="name"requiered>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="" id="apellido"requiered>
+
+    <label for="Fecha de nacimiento">Fecha:</label>
+    <input type="date" name="" id="fecha"requiered>
+
+    <input type="radio" id="masculino" name="genero" value="masculino" required>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="genero" value="femenino" required>
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="otro" name="genero" value="otro" required>
+    <label for="otro">Otro</label>
+</fieldset>
+<fieldset>
+    <legend>Informacion de contacto</legend>
+    <label for="email">Correo Electrinico:</label>
+    <input type="email" id="email" name="email"requiered>
+    <label for="telefono">telefono:</label>
+    <input type="tel" name="" id="tel", name="tel"requiered>
+    <label for="Direccion">Direccion:</label>
+    <textarea type="text" name="direccion" id="direccion"></textarea>
+</fieldset>
+<fieldset>
+    <legend>Informacion de cuenta</legend>
+    <label for="Nombre">Nombre de usuario:</label>
+    <input type="text" name="" id="text"requiered>
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="" id="password"requiered>
+    <label for="Confirmacion de contraseña">Confirmar contraseña:</label>
+    <input type="password" name="password" id="password"requiered>
+</fieldset>
+<fieldset>
+    <legend>Preferencias</legend>
+    <label for="color">Seleccionar un color favorito</label>
+    <select name="color" id="color">
+        <option value="rojo">rojo</option>
+        <option value="verde">verde</option>
+        <option value="azul">azul</option>
+        <option value="amarillo">amarillo</option>
+    </select>
+    <input type="checkbox" id="Terminos" name="Terminos"requiered>
+    <label for="Terminos">Aceptar Terminos y Condiciones</label>
+</fieldset>
+</form>
+</html>
