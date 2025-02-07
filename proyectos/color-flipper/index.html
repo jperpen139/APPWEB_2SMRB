@@ -8,15 +8,22 @@
     <script src="./js/script.js" type="text/Javascript"></script>
     <!--Codigo CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<!--Aqui hacemos colocaremos los botones "simple" y "hex" en un header-->
 <body>
   <header class="header">
-    <button class="header__btn header__btn--simple">Simple</button>
-    <button class="header__btn header__btn--hex">Hex</button>
-    <button class="header__btn header__btn--click-me">Click Me</button>
+    <h2>Color flipper</h2>
+    <ul>
+      <li class="header__boton"><a href="index.html"></a>Simple</li>
+      <li><a href="./html/hex.html"></a>Hex</li>
+    </ul>
   </header>
   <main class="main">
-    <h1>Background Color</h1>
+    <section class="color-cambiar">
+      <h1 class="color-cambiar__texto">Backgroud Color: <span id="color" class="color-cambiar__valor">Red</span></h1>
+      <button id="boton" class="color-cambiar__boton">Click me</button>
+    </section>
   </main>
 </body>
 </html>
