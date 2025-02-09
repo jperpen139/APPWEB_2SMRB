@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color flipper</title>
-    <!--Javascript-->
-    <script src="./js/script.js" type="text/Javascript"></script>
-    <!--Codigo CSS-->
+    <title>Color Flipper</title>
+    <!-- Código CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fuente Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="./js/script.js" defer></script>
 </head>
-<!--Aqui hacemos colocaremos los botones "simple" y "hex" en un header-->
 <body>
+
+  <!-- Encabezado con botones "Simple" y "Hex" -->
   <header class="header">
-    <h2>Color flipper</h2>
-    <ul>
-      <li class="header__boton"><a href="index.html"></a>Simple</li>
-      <li><a href="./html/hex.html"></a>Hex</li>
-    </ul>
+    <span class="header__titulo">Color flipper</span>
+    <button class="header__boton"><a href="index.html">Simple</a></button>
+    <button class="header__boton"><a href="./html/hex.html">Hex</a></button>
   </header>
+
+  <!-- Sección principal con el texto y botón -->
   <main class="main">
     <section class="color-cambiar">
-      <h1 class="color-cambiar__texto">Backgroud Color: <span id="color" class="color-cambiar__valor">Red</span></h1>
+      <h1 class="color-cambiar__texto">
+        Background Color: <span id="color" class="color-cambiar__valor">Red</span>
+      </h1>
       <button id="boton" class="color-cambiar__boton">Click me</button>
     </section>
   </main>
+
 </body>
 </html>
+

@@ -1,7 +1,84 @@
-/*ponemos variable global*/
-:root{
-    --backgroundColor: red;
-    font-family:"Montserrat",serif;
-  }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: red;
+  transition: background-color 0.5s;
+}
+
+/* Estilos del Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__titulo {
+  font-weight: bold;
+  color: teal;
+  font-size: 18px;
+}
+
+/* Alineación de botones a la derecha */
+.header__boton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header__boton a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header__boton a:hover {
+  color: gray;
+}
+
+/* Sección de cambio de color */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.color-cambiar {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.color-cambiar__valor {
+  color: teal;
+}
+
+/* Botón para cambiar el color */
+.color-cambiar__boton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.color-cambiar__boton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
