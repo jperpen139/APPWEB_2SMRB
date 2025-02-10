@@ -15,31 +15,32 @@ body {
 /* Estilos del Header */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+  padding: 1rem 2rem;
   background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .header__titulo {
   font-weight: bold;
   color: teal;
-  font-size: 18px;
+  font-size: 1rem;
+  display: flex;
 }
 
 /* Alineación de botones a la derecha */
-.header__boton {
+.header__titulo--simple{
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
+display: flex;
 }
 
-.header__boton a {
+.header__titulo--hex {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  justify-content:  center;
 }
 
 .header__boton a:hover {
@@ -58,9 +59,9 @@ body {
 .color-cambiar {
   background-color: black;
   color: white;
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-size: 24px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -69,14 +70,14 @@ body {
 }
 
 /* Botón para cambiar el color */
-.color-cambiar__boton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  background: none;
-  font-size: 16px;
+.boton__clickme {
+  margin-top: 2rem;
+  padding: 1rem 6rem;
+  border: 0.1rem solid;
+  background: red;
+  font-size: 1rem;
   font-weight: bold;
-  cursor: pointer;
+  color: black;
 }
 
 .color-cambiar__boton:hover {
