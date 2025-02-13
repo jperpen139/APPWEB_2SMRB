@@ -25,6 +25,7 @@ body {
   color: teal;
   font-size: 1rem;
   display: flex;
+  justify-content: flex-start;
 }
 
 /* Alineación de botones a la derecha */
@@ -33,13 +34,15 @@ body {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-display: flex;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__titulo--hex {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  display: flex;
   justify-content:  center;
 }
 
