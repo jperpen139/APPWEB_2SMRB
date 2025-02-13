@@ -1,5 +1,5 @@
 /* Reset básico */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,38 +13,44 @@ body {
 }
 
 /* Estilos del Header */
-.header {
+.cabecero {
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  align-items: center;
+
 }
 
-.header__titulo {
+.cabecero__titulo {
   font-weight: bold;
   color: teal;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
+  padding: 0.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Alineación de botones a la derecha */
-.header__titulo--simple{
-  background: none;
-  border: none;
+.cabecero__titulo--simple{
+  border: 1rem;
   font-size: 1rem;
   cursor: pointer;
-display: flex;
+  display: flex;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  padding:1rem 2rem;
+  margin-left: auto;
+background-color: white;
 }
 
-.header__titulo--hex {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  justify-content:  center;
-}
-
-.header__boton a:hover {
-  color: gray;
+.cabecero__titulo--hex {
+  border:1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  padding:1rem 2rem;
+  background-color: white;
 }
 
 /* Sección de cambio de color */
@@ -74,10 +80,10 @@ display: flex;
   margin-top: 2rem;
   padding: 1rem 6rem;
   border: 0.1rem solid;
-  background: red;
+  background-color:transparent;
   font-size: 1rem;
-  font-weight: bold;
-  color: black;
+  color: white;
+  border-color: black;
 }
 
 .color-cambiar__boton:hover {
