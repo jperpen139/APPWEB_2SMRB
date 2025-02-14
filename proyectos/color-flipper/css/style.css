@@ -1,5 +1,5 @@
 /* Reset básico */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,29 +13,23 @@ body {
 
 /* Estilos del Header */
 .cabecero {
-  padding: 0.5rem 1rem;
-  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
-
 }
 
 .cabecero__titulo {
   font-weight: bold;
   color: teal;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: flex-start;
+  font-size: 1rem;
 }
 
 /* Alineación de botones a la derecha */
 .cabecero__titulo--simple{
-  border: 1rem;
+  border: none;
   font-size: 1rem;
   cursor: pointer;
-  display: flex;
-<<<<<<< HEAD:proyectos/color-flipper/css/style.css
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .header__titulo--hex {
@@ -44,27 +38,11 @@ body {
   font-weight: bold;
   display: flex;
   justify-content:  center;
+  margin-left: auto;
 }
 
 .header__boton a:hover {
   color: gray;
-=======
-  text-align: right;
-  font-family: 'Montserrat', sans-serif;
-  padding:1rem 2rem;
-  margin-left: auto;
-background-color: white;
-}
-
-.cabecero__titulo--hex {
-  border:1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  padding:1rem 2rem;
-  background-color: white;
->>>>>>> a5b3bfc36092ebaf1656ff3089cbf551af8abece:proyectos/color-flipper/style.css
 }
 
 /* Sección de cambio de color */
@@ -94,10 +72,10 @@ background-color: white;
   margin-top: 2rem;
   padding: 1rem 6rem;
   border: 0.1rem solid;
-  background-color:transparent;
+  background: red;
   font-size: 1rem;
-  color: white;
-  border-color: black;
+  font-weight: bold;
+  color: black;
 }
 
 .color-cambiar__boton:hover {
