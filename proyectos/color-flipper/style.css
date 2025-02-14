@@ -34,21 +34,6 @@ body {
   font-size: 1rem;
   cursor: pointer;
   display: flex;
-<<<<<<< HEAD:proyectos/color-flipper/css/style.css
-  justify-content: flex-end;
-}
-
-.header__titulo--hex {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content:  center;
-}
-
-.header__boton a:hover {
-  color: gray;
-=======
   text-align: right;
   font-family: 'Montserrat', sans-serif;
   padding:1rem 2rem;
@@ -64,7 +49,6 @@ background-color: white;
   font-family: 'Montserrat', sans-serif;
   padding:1rem 2rem;
   background-color: white;
->>>>>>> a5b3bfc36092ebaf1656ff3089cbf551af8abece:proyectos/color-flipper/style.css
 }
 
 /* Sección de cambio de color */
