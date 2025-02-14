@@ -9,7 +9,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-color: red;
-  transition: background-color 0.5s;
 }
 
 /* Estilos del Header */
