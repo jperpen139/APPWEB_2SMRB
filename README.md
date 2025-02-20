@@ -264,7 +264,7 @@ El código PHP redirige a cuatro páginas según el resultado de la operación.
 </html>
 ```
 
-¡Puedes modificarlas y mejorarlas con CSS y JS! *(No obliagtorio)*
+¡Puedes modificarlas y mejorarlas con CSS y JS!
 
 ---
 
