@@ -191,7 +191,11 @@ Para que los usuarios puedan enviar sus datos, necesitamos un formulario HTML.Di
 
 * Crea un archivo llamado `login.html` dentro de la carpeta php. Este formulario envía los datos usando el método **POST** al archivo `login.php`. Tendrá dos campos: *usuario*, *contraseña*.
 
+![alt text](./imgs/image.png)
+
 * Crea un archivo llamado `registro.html` dentro de la carpeta php. Este formulario envía los datos usando el método **POST** al archivo `registro.php`. Tendrá cuatro campos: *nombre*, *apellido*, *email*, *contraseña*
+
+![alt text](./imgs/image-1.png)
 
 **OJO**: El atributo *name* de las etiquetas `<input>` deben nos permitirán acceder al contenido que introduce el cliente y que se manda al servidor a través del método *POST*.
 
