@@ -1,4 +1,4 @@
-# Guía de Instalación y Configuración de XAMPP
+# Guía para la creación de una login-page
 
 ## 1. Instalar XAMPP
 
