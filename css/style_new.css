@@ -1,0 +1,30 @@
+:root{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    margin: 10rem;
+}
+.main{
+    background-color: wheat;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+legend{
+    font-size: 1rem;
+    align-self: center;
+    font-weight: bold;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.nombre{
+    border-radius: 1rem;
+}

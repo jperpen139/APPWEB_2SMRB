@@ -7,8 +7,8 @@ session_start();
 $db_host = "localhost";
 $db_user = "root";  // Por defecto en XAMPP suele ser "root"
 $db_password = "";     // En XAMPP, por defecto suele estar vacío: ""
-$db_name = "php_project";      // Nombre de la base de datos creada
-$db_table_name = "usuarios";     // Nombre de la tabla creada
+$db_name = "proyecto_php";      // Nombre de la base de datos creada
+$db_table_name = "proyecto_php";     // Nombre de la tabla creada
 
 // Crear la conexión a MySQL usando mysqli
 $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
@@ -18,7 +18,7 @@ if (!$conn) {
 
 // Recoger los datos enviados desde el formulario
 $usuario = $_POST['email'];
-$password = $_POST['password'];
+$password = $_POST['contraseña'];
 
 // Consulta SQL para buscar el usuario en la base de datos
 $sql = "SELECT * FROM `$db_table_name` WHERE email = '$usuario'";

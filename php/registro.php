@@ -13,10 +13,10 @@ if (!$conn) {
 }
 
 // Creamos las variables con la información del cliente enviada a través del formulario
-$nombre = $_POST['name'];
-$apellido = $_POST['surname'];
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
 $usuario = $_POST['email'];
-$password = $_POST['password'];
+$password = $_POST['contraseña'];
 
 // Consulta SQL para buscar el usuario en la base de datos
 $sql = "SELECT * FROM `$db_table_name` WHERE email = '$usuario'";
