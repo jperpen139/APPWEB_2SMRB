@@ -10,8 +10,7 @@ body {
     margin: 0;
 }
 td {
-    border: 0.01rem solid #333;
+    border: 0.1rem solid #333;
     width: 2rem;
     height: 2rem;
-    text-align: center;
-}
+}       
