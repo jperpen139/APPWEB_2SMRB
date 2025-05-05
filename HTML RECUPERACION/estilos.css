@@ -14,3 +14,61 @@ td {
     width: 2rem;
     height: 2rem;
 }       
+
+.cuadrogrande1{
+    background-color: yellow;
+    opacity: 0.5;
+}
+.renglon1{
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+.cuadrogrande2{
+    background-color: green;
+    opacity: 0.5;
+}
+.renglonlargo1{
+    background-color: yellow;
+    opacity: 0.5;
+}
+.cuadropequeño{
+    background-color: gray;
+}
+.renglonlargo2{
+    background-color: rgba(74, 59, 173, 0.87);
+    opacity: 0.7;
+}
+.renglonlargo3{
+    background-color: green;
+    opacity: 0.5;
+}
+.renglon2{
+    background-color: green;
+    opacity: 0.5;
+}
+.renglon3{
+    background-color: rgba(74, 59, 173, 0.87);
+    opacity: 0.7;
+}
+.cuadrogrande3{
+    background-color: rgba(74, 59, 173, 0.87);
+    opacity: 0.7;
+}
+.renglonlargo4{
+    background-color: red;
+    opacity: 0.5;
+}
+.cuadrogrande4{
+    background-color: red;
+    opacity: 0.5;
+}
+.renglon4{
+    background-color: red;
+    opacity: 0.5;
+}
+#centroimagen{
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEKzApLw94zRumwlYqlLZOEoWUzSgF6Xah3awmo9sahdM2jQ4Y);
+    background-size: cover;
+    background-position: center 55%;
+}
