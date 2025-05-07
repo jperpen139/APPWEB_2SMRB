@@ -57,9 +57,43 @@ li{
 }
 .section__texto{
     text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+.seccion__imagenes{
+    display: flex;
+    margin: 1rem;
+}
+.imagen {
+    width: 320px;
+    height: 220px;
+}
+.imagen__parrafo{
+
+    text-align: center;
+}
+.imagen_leermas {
+    margin-top: 5px;
+    text-align: center;
 }
 
-.imagen{
-    width: 540px;
-    height: 320px;
+.fondo__footer{
+    padding: 3rem;
+    display: flex;
+    background-color: rgb(218, 218, 218);
+}
+h4{
+    font-weight: bold;
+}
+.listas__derechos{
+    list-style: none;
+    margin-right: 3rem;
+}
+.listas{
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.titulo__pie{
+    font-weight: bold;
 }
