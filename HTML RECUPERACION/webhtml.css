@@ -40,8 +40,7 @@ li{
     text-decoration: solid;
 }
 .ready__text{
-    justify-content: center;
-    text-align: justify;
+    text-align: center;
 }
 .ready__boton{
     background-color: black;
@@ -62,7 +61,7 @@ li{
 }
 .seccion__imagenes{
     display: flex;
-    margin: 1rem;
+    justify-content: center;
 }
 .imagen {
     width: 320px;
@@ -87,13 +86,17 @@ h4{
 }
 .listas__derechos{
     list-style: none;
-    margin-right: 3rem;
+    margin-right: 30rem;
 }
 .listas{
     list-style: none;
     margin-right: 1rem;
+    text-decoration: none;
+    color: black;
 }
-
 .titulo__pie{
     font-weight: bold;
+}
+.link__footer{
+    display: flex;
 }
