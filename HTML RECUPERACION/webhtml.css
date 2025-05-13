@@ -1,7 +1,65 @@
-.Titulo{
+
+/* Variables parametros */
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgba(236,236,236, 0.8);
+    --colorterciario: black;
+    --altura-cabecero:5%;
+    --altura-principal:100%;
+    --altura-piepagina: 20%;
+}
+
+/* reseteo de etiquetas*/
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+
+
+/* etiquetas basicas */
+body{
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 50px;
+}
+
+/*Etiquetas de tipo clase -- Metodolgi BEM*/
+/*- Cabecero*/
+.cabecero{
+    width: 100%;
+    height: var(--altura-cabecero);
+    background-color: aqua;
+}
+/*principal*/
+.principal{
+    width: 100%;
+    height: var(--altura-principal);
+    background-color: blue;
+}
+/* piepagina*/
+.piepagina{
+    width: 100%;
+    height: var(--altura-pagina);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecero__titulo{
     text-align: left;
 }
-header{
+.cabecero{
     padding: 0.5rem 1rem;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -9,20 +67,19 @@ header{
     justify-content: space-between;
 }
 
-.link_nav{
+.cabecero__navegador{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.lista__links{
+.cabecero__navegador__lista{
     display: flex;
     list-style: none;
+    width: 70%;
 
 }
-li{
-    margin-left: 1rem;
-}
-.titulo_boton{
+
+.cabecero__navegador__boton{
     height: 2rem;
     margin-left: 1rem;
     background-color: white;
@@ -31,18 +88,19 @@ li{
 }
 
 /* Aqui empieza el main */
-.seccion__ready{
+.principal__seccion1{
     background-color: rgb(218, 218, 218);
     text-align: center;
-    padding: 10rem
+    padding: 10rem;
+    margin-bottom: 3rem;
 }
-.ready{
+.principal__seccion1__titulo{
     text-decoration: solid;
 }
-.ready__text{
+.principal__seccion1__texto{
     text-align: center;
 }
-.ready__boton{
+.principal__seccion1__boton{
     background-color: black;
     color: white;
     border-radius: 0.5rem;
@@ -50,53 +108,63 @@ li{
     height: 2rem;
 }
 /* Aqui empieza la seccion de imagenes */
-
-.section__titulo{
-    text-align: center;
+.principal__seccion2{
+    width:  100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.section__texto{
+
+.principal__seccion2__titulo{
+    height: 7%;
+}
+.principal__seccion2__texto{
+    height: 50%;
+    width: 20%;
     text-align: center;
     display: flex;
     justify-content:space-around;
 }
-.seccion__imagenes{
+.principal__seccion2__imagenes{
+    padding: 4.5rem;
     display: flex;
     justify-content: center;
 }
-.imagen {
-    width: 320px;
-    height: 220px;
+.principal__seccion2__imagenes__figura__imagen {
+    width: 20rem;
+    height: 13,75rem;
 }
-.imagen__parrafo{
+.principal__seccion2__imagenes__figura__captura__texto{
 
     text-align: center;
 }
-.imagen_leermas {
+.principal__seccion2__imagenes__figura__captura__enlace {
     margin-top: 5px;
     text-align: center;
 }
 
-.fondo__footer{
+/*aqui empieza el footer*/
+
+.pie{
     padding: 3rem;
-    display: flex;
     background-color: rgb(218, 218, 218);
+    display: flex;
 }
-h4{
+.pie__lista__titulo,.pie_seccion__listas__titulo{
     font-weight: bold;
 }
-.listas__derechos{
+.pie__lista{
     list-style: none;
-    margin-right: 30rem;
 }
-.listas{
+.pie__seccion__listas{
     list-style: none;
-    margin-right: 1rem;
     text-decoration: none;
     color: black;
+    margin-right: 10rem;
 }
-.titulo__pie{
-    font-weight: bold;
-}
-.link__footer{
+
+.pie__seccion{
     display: flex;
 }
