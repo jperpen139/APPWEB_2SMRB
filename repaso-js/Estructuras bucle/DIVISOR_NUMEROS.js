@@ -6,7 +6,7 @@ if(num_ent<=0){
 }else{
     for(let i= 1;i<=num_ent;i++){
         if(num_ent%i ===0){
-            list_div=list_div + i;
+            list_div=list_div + i+",";
         }
     }
 }
