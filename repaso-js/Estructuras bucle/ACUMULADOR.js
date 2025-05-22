@@ -10,9 +10,10 @@ if(num_pos<=0){
     if(num_may<=num_pos){
         alert("Le he pedido un numero entreo mayor que"+ num_pos+":")
     }else{
-        for(let i=num_pos;i>num_may;i=i+num_pos){
+        for(let i=num_pos;i<=num_may;i++){
+            i=i+num_pos+num_may+1
            lista_sum=lista_sum+i
         }
-        alert("La suma desde "+num_pos+" hasta "+num_may+ " es"+ lista_sum)
+        alert("La suma desde "+num_pos+" hasta "+num_may+ " es "+ lista_sum)
     }
 }
