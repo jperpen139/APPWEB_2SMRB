@@ -1,7 +1,8 @@
 const num_pos=parseInt(prompt("Escriba un numero entero positivo: "))
 
 
-let lista_sum=[]
+
+let suma=0
 
 if(num_pos<=0){
     alert("Le he pedido un numero entero positivo")
@@ -11,9 +12,8 @@ if(num_pos<=0){
         alert("Le he pedido un numero entreo mayor que"+ num_pos+":")
     }else{
         for(let i=num_pos;i<=num_may;i++){
-            i=i+num_pos+num_may+1
-           lista_sum=lista_sum+i
+            suma=suma+i
         }
-        alert("La suma desde "+num_pos+" hasta "+num_may+ " es "+ lista_sum)
+        alert("La suma desde "+num_pos+" hasta "+num_may+ " es "+ suma)
     }
 }
