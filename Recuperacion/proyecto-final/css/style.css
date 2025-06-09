@@ -1,0 +1,169 @@
+/* Variables parametros */
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgba(236,236,236, 0.8);
+    --colorterciario: black;
+    --altura-cabecero:5%;
+    --altura-principal:100%;
+    --altura-piepagina: 20%;
+}
+
+/* reseteo de etiquetas*/
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+
+
+/* etiquetas basicas */
+body{
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 50px;
+}
+
+/*Etiquetas de tipo clase -- Metodolgi BEM*/
+/*- Cabecero*/
+.cabecero{
+    width: 100%;
+    height: var(--altura-cabecero);
+    background-color: aqua;
+}
+/*principal*/
+.principal{
+    width: 100%;
+    height: var(--altura-principal);
+}
+/* piepagina*/
+.piepagina{
+    width: 100%;
+    height: var(--altura-pagina);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecero__titulo{
+    text-align: left;
+}
+.cabecero{
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecero__navegador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cabecero__navegador__lista{
+    display: flex;
+    list-style: none;
+    width: 70%;
+
+}
+
+.cabecero__navegador__boton{
+    height: 2rem;
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+}
+
+/* Aqui empieza el main */
+.principal__seccion1{
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    padding: 10rem;
+    margin-bottom: 3rem;
+}
+.principal__seccion1__titulo{
+    text-decoration: solid;
+}
+.principal__seccion1__texto{
+    text-align: center;
+    
+}
+.principal__seccion1__boton{
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+    height: 2rem;
+}
+/* Aqui empieza la seccion de imagenes */
+.principal__seccion2{
+    width:  100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__seccion2__titulo{
+    height: 7%;
+}
+.principal__seccion2__texto{
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+.principal__seccion2__imagenes{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.principal__seccion2__imagenes__figura__imagen {
+    width: 20rem;
+    height: 13,75rem;
+}
+.principal__seccion2__imagenes__figura__captura__texto{
+
+    text-align: center;
+}
+.principal__seccion2__imagenes__figura__captura__enlace {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*aqui empieza el footer*/
+
+.pie{
+    padding: 3rem;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+}
+.pie__lista__titulo,.pie_seccion__listas__titulo{
+    font-weight: bold;
+}
+.pie__lista{
+    list-style: none;
+}
+.pie__seccion__listas{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-right: 10rem;
+}
+
+.pie__seccion{
+    display: flex;
+}
