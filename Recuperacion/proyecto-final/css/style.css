@@ -34,11 +34,11 @@ img{
 
 /*Etiquetas de tipo clase -- Metodolgi BEM*/
 /*- Cabecero*/
-.cabecero{
+/* .cabecero{
     width: 100%;
     height: var(--altura-cabecero);
     background-color: aqua;
-}
+} */
 /*principal*/
 .principal{
     width: 100%;
@@ -135,6 +135,18 @@ footer{
     width: 20rem;
     height: 13,75rem;
 }
+.principal__seccion2__imagenes__flecha{
+    width: 7rem;
+    height: 14rem;
+} 
+.principal__seccion2__imagenes__figura__imagenflecha{
+    width: 7rem;
+    height: 14rem;
+}
+/* .principal__seccion2__imagenes__figura{
+    width:5rem;
+    height: 5rem;
+}  */
 .principal__seccion2__imagenes__figura__captura__texto{
 
     text-align: center;
