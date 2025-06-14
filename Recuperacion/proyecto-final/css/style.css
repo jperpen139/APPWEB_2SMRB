@@ -10,6 +10,14 @@
     --fontFamily:"Montserrat", sans-serif;
 }
 
+/* modo normal :
+anchura : 50%
+altura: 120%
+
+modo ampliado:
+anchura: 100%
+altura: 150% */
+
 /* reseteo de etiquetas*/
 *{
     margin: 0rem;
@@ -21,33 +29,41 @@
 
 
 /* etiquetas basicas */
-body{
+.body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 }
+
 a{
     text-decoration: none;
 }
 li{
     list-style: none;
 }
-img{
-    width: 50px;
-}
+
 
 /*Etiquetas de tipo clase -- Metodolgi BEM*/
 /*- Cabecero*/
 
 /*principal*/
+
 .principal{
-    width: 100%;
+    width: 50%;
+    background-color: white;
     height: var(--altura-principal);
 }
+
 /* piepagina*/
 .piepagina{
-    width: 100%;
+    width: 50%;
     height: var(--altura-pagina);
 }
+
 
 footer{
     display: flex;
@@ -57,18 +73,13 @@ footer{
     text-align: left;
 }
 .cabecero{
-    padding: 0.5rem 1rem;
+
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: var(--altura-cabecero);
-}
-.cabecero__oscuro{
-   background-color: #212f3c; 
-   color: white;
-
+    width: 50vw;   
+    /* height: var(--altura-cabecero);  */
 }
 
 .cabecero__navegador{
@@ -116,10 +127,7 @@ footer{
     text-align: center;
     padding: 10rem;
 }
-.principal__seccion1__osc{
-    background-color: #17202a;
-    color: white;
-}
+
 .principal__seccion1__titulo{
     text-decoration: solid;
 }
@@ -134,10 +142,7 @@ footer{
     padding: 1.5rem 2.5rem 2rem 2.5rem;
     height: 2rem;
 }
-.principal__seccion1__boton__osc{
-    background-color: white;
-    color: black;
-}
+
 /* Aqui empieza la seccion de imagenes */
 .principal__seccion2{
     width:  100%;
@@ -147,10 +152,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.principal__seccion2__osc{
-    background-color: #212f3c;
-    color: white;
-}
 
 .principal__seccion2__titulo{
     height: 7%;
@@ -158,6 +159,7 @@ footer{
 .principal__seccion2__texto{
     height: 20%;
     width: 20%;
+    margin-bottom: 2rem;
     text-align: center;
     display: flex;
     justify-content:space-around;
@@ -168,17 +170,22 @@ footer{
     justify-content: center;
 }
 .principal__seccion2__imagenes__figura__imagen {
-    width: 20rem;
-    height: 13,75rem;
-}
-.principal__seccion2__boton__flecha{
-    width: 7rem;
+    width: 30rem;
     height: 14rem;
+}
+.principal__seccion2__boton__flecha__previo{
+    width: 7rem;
+    height: 4rem;
+    border: none;
+}
+.principal__seccion2__boton__flecha__siguiente{
+    width: 7rem;
+    height: 4rem;
     border: none;
 } 
 .principal__seccion2__imagenes__figura__imagenflecha{
-    width: 7rem;
-    height: 14rem;
+    width: 5vw;
+    height: 5vw;
 }
 /* .principal__seccion2__imagenes__figura{
     width:5rem;
@@ -199,7 +206,9 @@ footer{
     padding: 3rem;
     background-color: rgb(218, 218, 218);
     display: flex;
+    width: 50vw;
 }
+
 .pie__osc{
     color: white;
     background-color: #17202a;
@@ -212,6 +221,7 @@ footer{
 }
 .pie__lista{
     list-style: none;
+    margin-right: 3rem;
 }
 .pie__seccion__listas{
     list-style: none;
@@ -221,7 +231,67 @@ footer{
 
 .pie__seccion{
     display: flex;
+    width: 50vw;
 }
 .pie__seccion__osc{
     color: white;
+}
+
+.pie__seccion__listas__elemento__osc{
+    color: white;
+}
+/* etiquetas oscuras */
+.body__osc{
+    background-color: white;
+}
+.cabecero__oscuro{
+   background-color: #212f3c; 
+   color: white;
+}
+.cabecero__navegador__boton__amp__oscurecer{
+    background-color: #17202a;
+    color: white;
+    border-color: white;
+    box-sizing: border-box;
+}
+.cabecero__navegador__boton__osc__oscurecer{
+    background-color: #17202a;
+    color: white;
+    border-color: white;
+    box-sizing: border-box;
+}
+.principal__seccion1__osc{
+    background-color: #17202a;
+    color: white;
+}
+.principal__seccion1__boton__osc{
+    background-color: white;
+    color: black;
+}
+.principal__seccion2__osc{
+    background-color: #212f3c;
+    color: white;
+}
+.pie__osc{
+    color: white;
+    background-color: #17202a;
+}
+.pie_seccion__listas__titulo__osc{
+    color:white;
+}
+.pie__seccion__osc{
+    color: white;
+}
+.pie__seccion__listas__elemento__osc{
+    color: white;
+}
+/* Ampliacion */
+.principal__amp{
+    width: 100%;
+}
+.cabecero__amp{
+    width: 100%;
+}
+.pie__amp{
+    width: 100%;
 }
