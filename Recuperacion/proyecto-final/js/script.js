@@ -69,15 +69,14 @@ boton_siguiente.addEventListener("click",function(){
 let atras = -1;
 
 boton_previo.addEventListener("click", function(){
+    atras--;
+    if(atras < 0){
+        atras = rutas_imagenes.length - 1;
+    }
     rutas_imagenes.forEach((elemento, lista) => {
         if(lista == atras){
             imgs.setAttribute("src", elemento);
         }
     });
-    atras--;
-    
-    if(atras < 0){
-        atras = rutas_imagenes.length - 1;
-    }
 });
 
