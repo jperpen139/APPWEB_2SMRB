@@ -74,7 +74,7 @@ boton_previo.addEventListener("click", function(){
         atras = rutas_imagenes.length - 1;
     }
     rutas_imagenes.forEach((elemento, lista) => {
-        if(lista === atras){
+        if(lista == atras){
             imgs.setAttribute("src", elemento);
         }
     });
